@@ -1,7 +1,7 @@
 {
   "name": "Codesmith",
   "version": "1.0",
-  "description": "TBD",
+  "description": "All Roads Lead to Codesmith",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.js"]
