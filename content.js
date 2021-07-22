@@ -1,18 +1,35 @@
 alert("All Roads Lead to Codesmith");
-alert(window.location.href);
-redirectLink(document.body);
+// alert(window.location.href);
+// redirectLink(document.body);
 // create recursive function to loop through every element on the page
-function redirectLink (element) {
-  if(element.hasChildNodes()) {
-    element.childNodes.forEach(redirectLink)
-  }else if (element.nodeType === Node.TEXT_NODE) {
-    element.textContent = element.textContent.replace(/fullstack/gi, "TESTING")
-  }
-}
+// function redirectLink (element) {
+//   if(element.hasChildNodes()) {
+//     element.childNodes.forEach(redirectLink)
+//   }else if (element.nodeType === Node.TEXT_NODE) {
+//     element.textContent = element.textContent.replace(/fullstack/gi, "TESTING")
+//   }
+// }
+
+// const badLinks = ['https://www.fullstackacademy.com/', 'fullstackacademy.com']
+
+const badURL = {
+  //hack reactor, flat iron, app academy, coding dojo
+  "https://www.fullstackacademy.com/" : null,
+  "https://www.hackreactor.com/" : null,
+  "https://flatironschool.com/" : null,
+  "https://www.appacademy.io/" : null,
+  "https://www.codingdojo.com/" : null,
+  "https://www.nucamp.co/" : null
+};
+
 
 function replaceURL (url) {
-  if (url === "https://www.fullstackacademy.com/") {
-    window.location.replace("https://codesmith.io/")
+  console.log(url);
+  console.log(badURL);
+  console.log(badLinks[0]);
+  if (badURL.hasOwnProperty(url)) {
+    //alert "Whoops, your on the wrong website"
+    window.location.replace("https://codesmith.io/");
   }
 }
 
