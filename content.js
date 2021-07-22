@@ -10,6 +10,14 @@ function redirectLink (element) {
   }
 }
 
+function replaceURL (url) {
+  if (url === "https://www.fullstackacademy.com/") {
+    window.location.replace("https://codesmith.io/")
+  }
+}
+
+replaceURL(window.location.href);
+
 // document.addEventListener('loading', function () {
 //   alert("Hello WOrld");
 //   console.log('is this line')
