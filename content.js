@@ -1,4 +1,6 @@
-alert("All Roads Lead to Codesmith");
+if (!(window.location.href === "https://codesmith.io/")){
+  alert("All Roads Lead to Codesmith");
+}
 // alert(window.location.href);
 // redirectLink(document.body);
 // create recursive function to loop through every element on the page
@@ -26,14 +28,21 @@ const badURL = {
 function replaceURL (url) {
   console.log(url);
   console.log(badURL);
-  console.log(badLinks[0]);
   if (badURL.hasOwnProperty(url)) {
-    //alert "Whoops, your on the wrong website"
+    alert ("I don't think that's where you wanted to go");
+    alert ("I got you don't worry about it");
     window.location.replace("https://codesmith.io/");
+    // testing updating the background color once we land on the codesmith page - SB
+    // do we need an event listener to update the background once the page has loaded???
   }
 }
 
 replaceURL(window.location.href);
+
+if (window.location.href === "https://codesmith.io/"){
+  document.body.style = "background-color: pink !important";
+  // document.body.style = "background-image: url('cs-logo.png'); background-repeat: repeat-y";
+}
 
 // document.addEventListener('loading', function () {
 //   alert("Hello WOrld");
