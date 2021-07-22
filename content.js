@@ -1,4 +1,4 @@
-console.log("Hello WOrld")
+alert("Hello WOrld");
 
 document.addEventListener('DOMContentLoaded', function () {
   // Create a bank of reference URLs to compare against

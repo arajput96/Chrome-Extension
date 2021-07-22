@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
   // Create a bank of reference URLs to compare against
-  const badLinks = ['https://www.fullstackacademy.com', 'fullstackacademy.com'];
+  // const badLinks = ['https://www.fullstackacademy.com', 'fullstackacademy.com'];
   // store current window.location in a variable
-  let currentPage = window.location.href;
-  console.log(currentPage);
+  // let currentPage = window.location.href;
+  // console.log(currentPage);
   // if the current window.location is in our badLinks array
 
   // if(badLinks.includes(currentPage)){
@@ -27,5 +27,5 @@ document.addEventListener('DOMContentLoaded', function () {
 //     }
 // });
 
-})
+// })
 
